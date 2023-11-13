@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Island+Moments&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Delicious+Handrawn&family=Farsan&family=Lato&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&family=Roboto:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,900&display=swap');
+
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Delicious Handrawn', cursive;
+// font-family: 'Farsan', cursive;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Libre Franklin', sans-serif;
+
+$fontlogo: "Libre Franklin";
+$fondotitulos: "Lato";
+$fontcuerpo: 'Farsan';
+$fontgrande: 50px;
+$fontmediana: 40px;
+$fontchica: 30px;
+$fontexchica: 21px;
+$colortextos: rgb(29, 121, 192);
+$colorFondoyborde: rgb(213, 235, 227);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontcuerpo;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    color: $colortextos;
+    text-shadow: 0 0 1px rgb(9, 8, 8);
+    text-align: center;
+    font-size: $fontmediana;
+    font-family: $fontlogo;
+}
+
+@media only screen and (min-width:0) and (max-width:400px) {
+    .logo {
+        font-size: $fontexchica
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:768px) {
+    .logo {
+        font-size: $fontchica
+    }
+} */
+
+
+.navbar {
+    height: 120px;
+    display: flex;
+    background-image: url(Multimedia/Fondopagina.jpg);
+    box-shadow: 0 0 6px $colorFondoyborde !important;
+
+    ul {
+        li {
+            display: flex;
+            text-shadow: 0 0 1px rgb(9, 8, 8);
+            font-size: $fontchica;
+            padding: 20px;
+        }
+    }
+} */
+
+.nav-link {
+    color: $colortextos !important;
+}
+
+.nav-item {
+    a:hover {
+        color: rgb(0, 0, 0) !important;
+    }
+}
+
+.Jumbotron {
+    display:inline-block;
+    width: 100%;
+    height: 150px;
+    background-image: url(Multimedia/azulfondo.png);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        font-family: $fondotitulos;
+        color: blue;
+        width: 100%;
+        border: 5px solid rgb(0, 0, 0);
+        background-image: url(Multimedia/Fondopagina.jpg);
+        text-align: center;
+    }
+}
+
+h2 {
+    font-family: $fondotitulos;
+    text-align: center;
+    color: $colortextos !important;
+    text-shadow: 0 0 1px rgb(9, 8, 8);
+    font-size: $fontchica;
+    padding: 0px;
+    margin: 0;
+    border: 1px solid black;
+    background-image: url(Multimedia/Fondopagina.jpg);
+}
+
+.nright {
+    color: $colortextos;
+    text-align: center;
+    background-size: cover;
+    font-size: $fontmediana;
+    font-family: $fontcuerpo;
+}
+
+article {
+    background-color: $colorFondoyborde;
+    border: 2px solid black;
+    height: 200px;
+}
+
+.img-fluid {
+    border: 2px solid black;
+    align-content: center;
+}
+
+.img-cliente:hover {
+    background-size: 130%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridClientes {
+    height: 600px;
+    background-color: $colorFondoyborde;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.item {
+    border: solid 1px black;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.9s;
+}
+
+.item:hover {
+    background-size: 130%;
+}
+
+
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(Multimedia/Uniformes2.jpg);
+}
+
+.item2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-image: url(Multimedia/tela2.jpg);
+}
+
+.item3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(Multimedia/tela3.jpg);
+}
+
+.item4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(Multimedia/tela4.jpg);
+}
+
+.item5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url(Multimedia/tela5.jpg);
+
+}
+
+.item6 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(Multimedia/tela6.jpg);
+}
+
+.item7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(Multimedia/tela7.jpg);
+}
+
+.item8 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-image: url(Multimedia/tela8.jpg);
+}
+
+@media only screen and (max-width:768px) {
+    .gridClientes {
+        height: 8*160px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 160px);
+    }
+
+    .item1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .item2 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .item3 {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .item4 {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .item5 {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .item6 {
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+
+    .item7 {
+        grid-column: 1/4;
+        grid-row: 7/8;
+    }
+
+    .item8 {
+        grid-column: 1/4;
+        grid-row: 8/9;
+    }
+}
+
+.item9 {
+    background-size: 80%;
+}
+
+.item9:hover {
+    background-size: 130%;
+}
+
+
+
+h1 {
+    color: rgb(10, 27, 157);
+    margin-bottom: 1px;
+}
+
+.call {
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 1px 20px;
+        border: 2px solid rgb(248, 248, 248);
+    }
+
+    a:hover {
+        background-color: rgb(247, 85, 57);
+    }
+}
+
+.row {
+    background-color: rgb(213, 235, 227);
+} */
+
+// Lista de talles
+.tamaño_p_info {
+    font-size: $fontmediana;
+    background-color: rgb(184, 162, 204);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+// información
+.tamaño_tarjetas_presupuesto {
+    width: 378px;
+    height: 378px;
+}
+
+// Inicio Carousel información y presupuesto
+.img-presupuesto {
+    height: 600px;
+    width: 80%;
+    border: 2px solid black;
+} */
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 79, 72);
+}
+
+// Fin carousel información y presupuesto 
+// Inicio Footer 
+
+footer {
+    background-color: black;
+    color: rgb(179, 92, 92);
+    text-align: center;
+    font-size: $fontchica;
+    padding: 20px;
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    i {
+        color: orange;
+        font-size: $fontgrande;
+        letter-spacing: 30px;
+    }
+} 
+
+// Fin Footer
+

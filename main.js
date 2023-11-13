@@ -153,7 +153,7 @@ const pintarCarrito = () => {
         <p>${product.cantidad}</p>
         <span class="sumar"> + </span>
         <p>Total: ${product.cantidad * product.precio} $</p>
-        <span class="delete-product"> ❌ </span>
+        <span class="delete-product"></span>
       `;
 
     modalContainer.append(carritoContent);
